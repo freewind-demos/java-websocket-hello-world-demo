@@ -1,7 +1,9 @@
 apply plugin: 'java'
 
 repositories {
-    mavenCentral()
+	mavenLocal()
+    jcenter() // fast!
+    mavenCentral() // very slow
 }
 
 dependencies {
