@@ -3,9 +3,20 @@ Gradle Test
 
 A very simple java project with gradle.
 
-Run
----
+Run tests:
 
-    ./gradlew run
+```
+./gradlew test
+```
 
-Will print `HELLO, WORLD!`
+Setup in IDEA
+--------------
+
+Use command line:
+
+```
+idea .
+```
+
+Or import the project directly with IDEA.
+

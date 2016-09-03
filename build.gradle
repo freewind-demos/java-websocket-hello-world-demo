@@ -1,8 +1,4 @@
 apply plugin: 'java'
-apply plugin: 'idea'
-
-apply plugin:'application'
-mainClassName = "my.Hello"
 
 repositories {
     mavenCentral()
@@ -10,15 +6,16 @@ repositories {
 
 dependencies {
     compile(
-            'org.apache.commons:commons-lang3:3.2.1',
-            'org.apache.commons:commons-io:1.3.2',
-            'com.google.guava:guava:16.0'
+            'org.apache.commons:commons-lang3:3.4'
     )
     testCompile(
-        'junit:junit:4.11'
+            'junit:junit:4.11',
+            'org.easytesting:fest-assert-core:2.0M10'
     )
 }
 
+// used to generate `./gradlew`
+// by run `gradle wrapper`
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.11';
+   gradleVersion = '2.4' //version required
 }
