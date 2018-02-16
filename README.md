@@ -1,22 +1,8 @@
-Gradle Test
-==========
+Java-WebSocket Hello World Demo
+================================
 
-A very simple java project with gradle.
+A chat room to demostrate websocket server and client.
 
-Run tests:
-
-```
-./gradlew test
-```
-
-Setup in IDEA
---------------
-
-Use command line:
-
-```
-idea .
-```
-
-Or import the project directly with IDEA.
+- Server: my.ChatServer
+- Client: my.ChatClient
 
